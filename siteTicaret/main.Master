@@ -1,0 +1,233 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="siteTicaret.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TEKNOMAR</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+
+    <link href="css/nivo-slider.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <link href="tema/default/default.css" rel="stylesheet" />
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+    <script src="js/SpryTabbedPanels.js"></script>
+    <link href="css/SpryTabbedPanels.css" rel="stylesheet" />
+
+    <link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+    <script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen"/>
+
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+     
+<body>
+    <form runat="server">
+   
+<div id="header">
+
+	<div id="ana">
+		<div id="ana2">
+            <div class="iletisim">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="resim" src="images/phone.PNG" width="15" height="15" />
+                            0850 526 2626</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="resim" src="images/mail.PNG" width="15" height="15" />
+                            info@teknomar.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="sosyal">
+                <a href="#" class="pic">
+                    <img src="images/fa.png" width="35px" height="35px" /></a>
+                <a href="#" class="pic2">
+                    <img src="images/tw.png" width="35px" height="35px" /></a>
+                <a href="#" class="pic3">
+                    <img src="images/ld.png" width="35px" height="35px" /></a>
+                <a href="#" class="pic4">
+                    <img src="images/gg.png" width="35px" height="35px" /></a>
+
+            </div>
+		</div>
+</div>
+
+		<div class="header2">
+            <div id="logo">
+                <a href="default.aspx">
+                    <img src="images/LOGOo.fw.png"/>
+                </a>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Kategoriler</a>
+
+                        <ul>
+                            <li><a href="anakart.aspx">Anakart</a></li>
+                            <li><a href="islemciler.aspx">İşlemciler</a></li>
+                            <li><a href="ekrankartlari.aspx">Ekran Kartları</a></li>
+                            <li><a href="#">Bellek(RAM)</a></li>
+                            <li><a href="#">Tv Kartı</a></li>
+                            <li><a href="#">Tv Kartı</a></li>
+                            <li><a href="#">Harici Disk</a></li>
+                            <li><a href="#">SSD</a></li>
+                            <li><a href="#">Sabit Disk</a></li>
+                            <li><a href="#">Güç Kaynakları</a></li>
+                            <li><a href="#">Kasa</a></li>
+                            <li><a href="#">Monitör</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div id="arama">
+                <asp:TextBox ID="txtarama" runat="server" placeholder="Search"></asp:TextBox>
+                
+            </div>
+            <div class="search">
+            <asp:Button ID="btnarama" runat="server" OnClick="btnarama_Click" /></div>
+            <div class="giris">
+                <a href="uyelik.aspx">
+                    <img src="images/uyelik.png" width="15" height="15" class="resim" />Üyelik</a>
+                <a href="sepet.aspx">
+                    <img src="images/sepet.png" width="15" height="15" class="resim" />Sepetim</a>
+            </div>
+
+        </div>
+
+
+</div>
+
+
+
+<div id="contact">
+<div class="con2">
+<div class="co">
+
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+       
+        
+</div>
+</div>
+
+</div>
+
+
+
+<div id="footer">
+
+<div id="ftr">
+
+ <div class="il">
+          
+
+                <div>
+
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style16" style="padding: 10px 10px 10px 0px; font-size: 20px;">Kurumsal</td>
+                            <td class="auto-style25"></td>
+                            <td class="auto-style24"></td>
+                            <td class="auto-style23"></td>
+                            <td class="auto-style16" style="padding: 10px 10px 10px 0px; font-size: 20px;">Kategoriler</td>
+                            <td class="auto-style23"></td>
+                            <td class="auto-style23"></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="hakkimizda.aspx">Hakkımızda</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="gizlilikpolitikasi.aspx">Gizlilik Politikamız</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="anakart.aspx">Anakart</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">Harici Disk</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="musterihizmetleri.aspx">Müşteri Hizmetleri</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="iletisimsayfasi.aspx">İletişim</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="islemciler.aspx">İşlemciler</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">SSD</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="keyifligaranti.aspx">Keyifli Garanti</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="">Servis Takip Formu</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="ekrankartlari.aspx">Ekran Kartı</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">Sabit Disk</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="siparsiasamalari.aspx">Sipariş Aşamaları</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="islemrehberi.aspx">İşlem Rehberi</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="">Bellek (RAM)</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">Güç Kaynakları</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="sss.aspx">S.S.S</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="">Site Haritası</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="">Tv Kartı</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">Kasa</a></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style22"><a href="insankaynaklari.aspx">İnsan Kaynakları</a></td>
+                            <td class="auto-style26"></td>
+                            <td class="auto-style22"><a href="">Marka Haritası</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style22"><a href="">Ses Kartı</a></td>
+                            <td class="auto-style"></td>
+                            <td class="auto-style"><a href="">Monitor</a></td>
+                        </tr>
+
+
+
+                    </table>
+                    
+                    <div class="cizgi"></div>
+                    <p class="yazi">
+                        Türkiye’nin Teknoloji & Bilgisayar Hiperstoru<br />
+                        Copyright 2017 TEKNOMAR San. ve Tic. A.Ş.
+                    </p>
+                    <img src="images/pay-icons.png" class="imga" />
+
+
+
+                </div>
+               
+            </div>
+
+</div>
+
+
+
+
+</div>
+    </form>
+</body>
+</html>

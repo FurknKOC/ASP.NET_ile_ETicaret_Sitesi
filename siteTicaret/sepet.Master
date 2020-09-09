@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="sepet.master.cs" Inherits="siteTicaret.sepet" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="sepet">
+	<div id="sepet2">       
+		<div id="sepet3">
+            <div class="sepeteheader" >
+                <a href="#"><img src="images/LOGOo.fw.png"/></a>
+                
+            </div>
+            
+            <div class="sepetmenu">
+            <ul> 
+            <li class="after"><a href="">SEPETİM</a></li> 
+            <li class="after"><a href="">ADRESİM</a></li>
+            <li><a href="">ÖDEME</a></li>
+            </ul>
+            </div>
+            
+            
+            <div class="sepeticerik">
+
+                
+                <asp:ContentPlaceHolder ID="head" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+
+            
+      
+            <div id="sepetfooter">
+       		
+            <div class="footercizgi"></div>
+            
+            <p class="footeryazi">Copyright © 2017 TEKNOMAR, Her hakkı saklıdır.</p>
+            
+        	</div>
+            
+            
+		</div>
+        
+        
+	</div>
+</div>
+    
+</body>
+</html>
